@@ -1,0 +1,28 @@
+{
+  "actividades": [
+    {
+      "id": 1,
+      "nombre": "Ajedrez",
+      "descripcion": "Cuando juegas al ajedrez, tu cerebro tiene el reto de ejercer la lógica, desarrollar el reconocimiento de patrones, tomar decisiones tanto visual como analíticamente y poner a prueba tu memoria. ... El ajedrez puede mantener activo tu cerebro toda tu vida.",
+      "categoria": "deportiva",
+      "horas": 2,
+      "correo": "ajedrez@leon.tecnm.mx"
+    },
+    {
+      "id": 2,
+      "nombre": "Análisis Cinematográfico",
+      "descripcion": "Acercar los elementos estéticos a los cursantes para que se les facilite la apreciación, el análisis y el disfrute de una obra fílmica.",
+      "categoria": "cultural",
+      "horas": 4,
+      "correo": "cinematografico@leon.tecnm.mx"
+    },
+    {
+      "id": 3,
+      "nombre": "Banda de Guerra",
+      "descripcion": "Representar el respeto cívico y ético de la comunidad tecnológica, engalanar los actos cívicos, fomentando una cultura cívica a los símbolos patrios, sorprender con sus exhibiciones, participar en eventos locales, prenacionales y nacionales de esta índole mostrando habilidades de coordinación, disciplina, marcialidad, te hacen pertenecer al Grupo de Banda de Guerra.",
+      "categoria": "civica",
+      "horas": 1.5,
+      "correo": "escolta@leon.tecnm.mx"
+    }
+  ]
+}
