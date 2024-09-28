@@ -38,3 +38,7 @@ npm run dev
 - POST `/api/extraescolares`
 - PUT `/api/extraescolares/:id`
 - DELETE `/api/extraescolares/:id`
+
+![image](https://github.com/user-attachments/assets/170f6981-638e-4226-af73-09e54001c2f5)  
+
+Información sobre las actividades extraescolares extraida de: [https://www.taekukmusul.com.mx/tecleon/inicial.php](https://www.taekukmusul.com.mx/tecleon/inicial.php)
