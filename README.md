@@ -7,7 +7,7 @@ Laboratorio de despliegue de aplicaciones, Agosto-Diciembre 2024, 12:15 - 13:55
 - Aldana Pérez José Samuel
 - Omar
 - Diego
-- Brian
+- Solis M del Campo Brian Uriel
 
 ## Instalación
 
