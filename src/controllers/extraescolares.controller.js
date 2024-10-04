@@ -14,9 +14,24 @@ const getActividad = (req, res) => {
 
 // Brian
 const postActividad = (req, res) => {
-  // obtener la actividad a crear del req.body y usar el servicio
-  // status 201 si se creo
-  // status 400 si ya existia una actividad con el id
+  // Obtener la actividad a crear del req.body
+  const nuevaActividad = req.body;
+
+  // Usar el servicio para crear la actividad
+  const resultado = actividadesService.crear(nuevaActividad);
+
+  if (resultado.creado) {
+    // 201 Created
+    res.status(201).json({
+      mensaje: 'Actividad creada con éxito',
+      actividad: resultado.actividad
+    });
+  } else {
+    // 400 Bad Request
+    res.status(400).json({
+      mensaje: 'No se pudo crear la actividad. El ID ya existe o los datos son inválidos.'
+    });
+  }
 };
 
 // Omar
