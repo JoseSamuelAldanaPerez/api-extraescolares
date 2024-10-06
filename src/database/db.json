@@ -23,6 +23,14 @@
       "categoria": "civica",
       "horas": 1.5,
       "correo": "escolta@leon.tecnm.mx"
+    },
+    {
+      "id": 4,
+      "nombre": "Artes Visuales",
+      "descripcion": "Las artes visuales son una forma de expresión artística que utiliza elementos visuales para comunicar ideas, emociones y conceptos.",
+      "categoria": "cultural",
+      "horas": 2,
+      "correo": "artesvisuales@leon.tecnm.mx"      
     }
   ]
 }
