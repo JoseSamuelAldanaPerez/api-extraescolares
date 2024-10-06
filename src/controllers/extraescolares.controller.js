@@ -2,14 +2,28 @@ const actividadesService = require('../services/extraescolares.service');
 
 // Diego
 const getActividades = (req, res) => {
-  // solo obtener las actividades con el servicio y devolverlas con status 200
+  // Obtener todas las actividades usando el servicio
+  const actividades = actividadesService.obtenerTodo();
+
+  // Devolver las actividades con estado 200
+  res.status(200).json(actividades);
 };
 
 // Diego
 const getActividad = (req, res) => {
-  // obtener el id de los parametros y usar el servicio
-  // status 200 si se encontro
-  // status 404 sino
+// Obtener el id de los parámetros y convertirlo a número
+const id = Number(req.params.id);
+
+// Usar el servicio para obtener la actividad por ID
+const actividad = actividadesService.obtenerPorID(id);
+
+if (actividad) {
+  // Responder con estado 200 y la actividad si se encontró
+  res.status(200).json(actividad);
+} else {
+  // Responder con estado 404 si no se encontró la actividad
+  res.status(404).json({ mensaje: 'Actividad no encontrada con id ' + id });
+}
 };
 
 // Brian

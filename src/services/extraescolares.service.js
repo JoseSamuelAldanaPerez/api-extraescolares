@@ -5,7 +5,7 @@ const databaseUtils = require('../database/utils');
  * @returns {Array<object>} arreglo de actividades
  */
 function obtenerTodo() {
-  // leer actividades de databaseUtils.read y retornarlas
+  return databaseUtils.read('actividades') || [];
 }
 
 /**
@@ -14,8 +14,13 @@ function obtenerTodo() {
  * @returns {object|null} objeto de la actividad o null si no se encuentra
  */
 function obtenerPorID(id) {
-  // leer actividades de databaseUtils.read, buscar la actividad que coincida con el ID
-  // y retornarla
+  let actividades = databaseUtils.read('actividades') || [];
+
+  const actividadEncontrada = actividades.find(function (actividad) {
+    return actividad.id === id;
+  });
+
+  return actividadEncontrada || null;
 }
 
 /**
