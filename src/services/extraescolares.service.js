@@ -48,6 +48,22 @@ function editar(id, actividad) {
   // menos actividad.id
   // reemplazar la actividad encontrada por la actualizada y guardarlas con databaseUtils.write
   // retornar actvidad actualizada
+
+ // Leer las actividades de la base de datos
+ let actividades = databaseUtils.read('actividades') || [];
+
+ //Busca el Index y condiciona de que sea igual al index que se le paso por parametro
+ let searchIndex = actividades.findIndex((search) => search.id === id);
+
+ //Si el index no existe, lo retorna null y si existe, lo actualiza
+ if(searchIndex === -1){
+    return null;
+ }
+
+ actividades[searchIndex] = {... actividades[searchIndex], ...actividad, id};
+ databaseUtils.write('actividades', actividades);
+ return actividades[searchIndex];
+ 
 }
 
 /**

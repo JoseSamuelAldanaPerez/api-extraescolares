@@ -6,6 +6,7 @@ const extraescolaresRutas = require('./routes/extraescolares.routes');
 const app = express();
 const port = 3000;
 
+app.use(express.json());
 app.use(morgan('dev'));
 app.use('/api/extraescolares', extraescolaresRutas);
 

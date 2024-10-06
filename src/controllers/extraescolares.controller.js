@@ -1,4 +1,4 @@
-const actividadesService = require('../services/extraescolares.service');
+const actividadesService = require("../services/extraescolares.service");
 
 // Diego
 const getActividades = (req, res) => {
@@ -11,19 +11,19 @@ const getActividades = (req, res) => {
 
 // Diego
 const getActividad = (req, res) => {
-// Obtener el id de los parámetros y convertirlo a número
-const id = Number(req.params.id);
+  // Obtener el id de los parámetros y convertirlo a número
+  const id = Number(req.params.id);
 
-// Usar el servicio para obtener la actividad por ID
-const actividad = actividadesService.obtenerPorID(id);
+  // Usar el servicio para obtener la actividad por ID
+  const actividad = actividadesService.obtenerPorID(id);
 
-if (actividad) {
-  // Responder con estado 200 y la actividad si se encontró
-  res.status(200).json(actividad);
-} else {
-  // Responder con estado 404 si no se encontró la actividad
-  res.status(404).json({ mensaje: 'Actividad no encontrada con id ' + id });
-}
+  if (actividad) {
+    // Responder con estado 200 y la actividad si se encontró
+    res.status(200).json(actividad);
+  } else {
+    // Responder con estado 404 si no se encontró la actividad
+    res.status(404).json({ mensaje: "Actividad no encontrada con id " + id });
+  }
 };
 
 // Brian
@@ -37,13 +37,14 @@ const postActividad = (req, res) => {
   if (resultado.creado) {
     // 201 Created
     res.status(201).json({
-      mensaje: 'Actividad creada con éxito',
-      actividad: resultado.actividad
+      mensaje: "Actividad creada con éxito",
+      actividad: resultado.actividad,
     });
   } else {
     // 400 Bad Request
     res.status(400).json({
-      mensaje: 'No se pudo crear la actividad. El ID ya existe o los datos son inválidos.'
+      mensaje:
+        "No se pudo crear la actividad. El ID ya existe o los datos son inválidos.",
     });
   }
 };
@@ -54,7 +55,15 @@ const putActividad = (req, res) => {
   // obtener la actividad actualizada del req.body y usar el servicio
   // status 200 si se actualizo
   // status 404 si no se encontro con el id
-};
+    const id = Number(req.params.id);
+    const actividadActualizada = req.body;
+    const resultado = actividadesService.editar(id, actividadActualizada);
+    if (resultado) {
+      res.status(200).json({ mensaje: `Actividad actualizada con éxito`, actividad: resultado});
+    } else {
+      res.status(404).json({ mensaje: `Actividad no encontrada con id ${id}` });
+    }
+}
 
 // req: request, objeto con los datos de la solicitud
 // res: response, objeto para responser al cliente
@@ -66,12 +75,12 @@ const deleteActividad = (req, res) => {
 
   if (eliminado) {
     // 200 ok
-    res.status(200).json({ mensaje: 'Actividad eliminada con éxito' });
+    res.status(200).json({ mensaje: "Actividad eliminada con éxito" });
   } else {
     // 404 error not found
     res
       .status(404)
-      .json({ mensaje: 'No se pudo encontrar la actividad con id ' + id });
+      .json({ mensaje: "No se pudo encontrar la actividad con id " + id });
   }
 };
 
