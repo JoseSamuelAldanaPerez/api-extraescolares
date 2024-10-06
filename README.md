@@ -5,7 +5,7 @@ Laboratorio de despliegue de aplicaciones, Agosto-Diciembre 2024, 12:15 - 13:55
 ## Integrantes
 
 - Aldana Pérez José Samuel
-- Omar
+- Manrique Galván Omar Manuel
 - Diego Muñoz Rodríguez
 - Solis M del Campo Brian Uriel
 
