@@ -6,7 +6,7 @@ Laboratorio de despliegue de aplicaciones, Agosto-Diciembre 2024, 12:15 - 13:55
 
 - Aldana Pérez José Samuel
 - Manrique Galván Omar Manuel
-- Diego Muñoz Rodríguez
+- Muñoz Rodríguez Diego
 - Solis M del Campo Brian Uriel
 
 ## Instalación
