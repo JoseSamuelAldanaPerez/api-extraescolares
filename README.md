@@ -11,6 +11,8 @@ Laboratorio de despliegue de aplicaciones, Agosto-Diciembre 2024, 12:15 - 13:55
 
 ## Instalación
 
+### Manual
+
 Hay que tener instalado node para descargar las dependencias desde terminal:
 
 ```bash
@@ -31,6 +33,20 @@ Si se está desarrollando, usar el modo dev (se reinicia al modificar y guardar 
 npm run dev
 ```
 
+### Docker
+
+Construir la imagen:
+
+```bash
+docker build -t extraescolares .
+```
+
+Ejecutar la imágen:
+
+```bash
+docker run -p 3000:3000 extraescolares
+```
+
 ## Documentación
 
 - GET `/api/extraescolares`
@@ -39,6 +55,6 @@ npm run dev
 - PUT `/api/extraescolares/:id`
 - DELETE `/api/extraescolares/:id`
 
-![image](https://github.com/user-attachments/assets/170f6981-638e-4226-af73-09e54001c2f5)  
+![image](https://github.com/user-attachments/assets/170f6981-638e-4226-af73-09e54001c2f5)
 
 Información sobre las actividades extraescolares extraida de: [https://www.taekukmusul.com.mx/tecleon/inicial.php](https://www.taekukmusul.com.mx/tecleon/inicial.php)
