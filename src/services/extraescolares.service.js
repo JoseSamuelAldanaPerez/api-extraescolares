@@ -30,9 +30,20 @@ function obtenerPorID(id) {
  */
 function crear(actividad) {
   // leer actividades de databaseUtils.read, buscar una actividad con id igual a actividad.id
+  let actividades = databaseUtils.read('actividades') || [];
+  const actividadExistente = actividades.find(act => act.id === actividad.id);
+
   // si se encuentra, retornar null porque ya existe
+  if (actividadExistente) {
+    return null;
+  }
+
   // sino, insertar en el arreglo la nueva actividad y guardarla con databaseUtils
+  actividades.push(actividad);
+  databaseUtils.write('actividades', actividades);
+
   // retornar actividad
+  return actividad;
 }
 
 /**
@@ -41,6 +52,9 @@ function crear(actividad) {
  * @param {object} actividad objeto con los nuevos datos
  * @returns {object|null} objeto de la actividad actualizada o null si no se encuentra
  */
+function editar(id, actividad) {
+  // Implementation goes here
+}
 function editar(id, actividad) {
   // leer actividades de datababaseUtils.read, buscar una actividad con id igual a id
   // si no se encuentra, retornar null porque no existe
