@@ -15,7 +15,6 @@ function obtenerTodo() {
  */
 function obtenerPorID(id) {
   let actividades = databaseUtils.read('actividades') || [];
-
   const actividadEncontrada = actividades.find(function (actividad) {
     return actividad.id === id;
   });
@@ -29,20 +28,13 @@ function obtenerPorID(id) {
  * @returns {object|null} objeto de la actividad creada o null si ya existe
  */
 function crear(actividad) {
-  // leer actividades de databaseUtils.read, buscar una actividad con id igual a actividad.id
   let actividades = databaseUtils.read('actividades') || [];
-  const actividadExistente = actividades.find(act => act.id === actividad.id);
+  const actividadExistente = actividades.find((act) => act.id === actividad.id);
 
-  // si se encuentra, retornar null porque ya existe
-  if (actividadExistente) {
-    return null;
-  }
-
-  // sino, insertar en el arreglo la nueva actividad y guardarla con databaseUtils
+  if (actividadExistente) return null;
   actividades.push(actividad);
   databaseUtils.write('actividades', actividades);
 
-  // retornar actividad
   return actividad;
 }
 
@@ -53,31 +45,14 @@ function crear(actividad) {
  * @returns {object|null} objeto de la actividad actualizada o null si no se encuentra
  */
 function editar(id, actividad) {
-  // Implementation goes here
-}
-function editar(id, actividad) {
-  // leer actividades de datababaseUtils.read, buscar una actividad con id igual a id
-  // si no se encuentra, retornar null porque no existe
-  // si existe, reemplazar todas las propiedades de la actividad encontrada por las del parametro actividad
-  // menos actividad.id
-  // reemplazar la actividad encontrada por la actualizada y guardarlas con databaseUtils.write
-  // retornar actvidad actualizada
+  let actividades = databaseUtils.read('actividades') || [];
+  let searchIndex = actividades.findIndex((search) => search.id === id);
 
- // Leer las actividades de la base de datos
- let actividades = databaseUtils.read('actividades') || [];
+  if (searchIndex === -1) return null;
+  actividades[searchIndex] = { ...actividades[searchIndex], ...actividad, id };
+  databaseUtils.write('actividades', actividades);
 
- //Busca el Index y condiciona de que sea igual al index que se le paso por parametro
- let searchIndex = actividades.findIndex((search) => search.id === id);
-
- //Si el index no existe, lo retorna null y si existe, lo actualiza
- if(searchIndex === -1){
-    return null;
- }
-
- actividades[searchIndex] = {... actividades[searchIndex], ...actividad, id};
- databaseUtils.write('actividades', actividades);
- return actividades[searchIndex];
- 
+  return actividades[searchIndex];
 }
 
 /**
@@ -90,17 +65,15 @@ function eliminar(id) {
   let actividades = databaseUtils.read('actividades') || [];
   let eliminado = false;
 
-  // Filtrar las actividades que no tengan el ID que se quiere eliminar
   actividades = actividades.filter(function (actividad) {
     if (actividad.id === id) {
-      // se encontro la actividad con el ID, no debe guardarse
       eliminado = true;
       return false;
     }
     return true;
   });
-  // Guardar el nuevo arreglo de actividades
   databaseUtils.write('actividades', actividades);
+
   return eliminado;
 }
 

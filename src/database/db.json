@@ -31,6 +31,14 @@
       "categoria": "cultural",
       "horas": 2,
       "correo": "artesvisuales@leon.tecnm.mx"
+    },
+    {
+      "id": 5,
+      "nombre": "Atletismo",
+      "descripcion": "La práctica frecuente del atletismo permite desarrollar velocidad, resistencia y potencia.",
+      "categoria": "deportiva",
+      "horas": 2,
+      "correo": "atletismo@leon.tecnm.mx"
     }
   ]
 }
