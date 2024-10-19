@@ -61,7 +61,6 @@ function editar(id, actividad) {
  * @returns {boolean} true si se eliminó algo
  */
 function eliminar(id) {
-  // Obtener el arreglo de actividades, si no existe se asigna un arreglo vacio []
   let actividades = databaseUtils.read('actividades') || [];
   let eliminado = false;
 

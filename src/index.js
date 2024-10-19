@@ -4,12 +4,17 @@ const morgan = require('morgan');
 const extraescolaresRutas = require('./routes/extraescolares.routes');
 
 const app = express();
-const port = 3000;
+const PORT = 3000;
 
 app.use(express.json());
 app.use(morgan('dev'));
 app.use('/api/extraescolares', extraescolaresRutas);
 
-app.listen(port, () => {
-  console.log(`Escuchando en el puerto ${port}`);
+const server = app.listen(PORT, () => {
+  console.log(`Escuchando en el puerto ${PORT}`);
 });
+
+module.exports = {
+  app,
+  server,
+};

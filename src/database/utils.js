@@ -1,7 +1,9 @@
 const fs = require('node:fs');
 const path = require('node:path');
+const { NODE_ENV } = process.env;
 
-const filePath = path.join(__dirname, 'db.json');
+const fileName = NODE_ENV === 'test' ? 'db-test.json' : 'db.json';
+const filePath = path.join(__dirname, fileName);
 
 /**
  * Obtener el contenido de una propiedad del archivo db.json
