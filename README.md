@@ -58,3 +58,17 @@ docker run -p 3000:3000 extraescolares
 ![image](https://github.com/user-attachments/assets/170f6981-638e-4226-af73-09e54001c2f5)
 
 Información sobre las actividades extraescolares extraida de: [https://www.taekukmusul.com.mx/tecleon/inicial.php](https://www.taekukmusul.com.mx/tecleon/inicial.php)
+
+## Testing
+
+Ejecutar todos los tests:
+
+```bash
+npm run test
+```
+
+Si se está desarrollando, `:watch` ayuda a ejecutar todos los tests cada vez que se hagan cambios en los archivos:
+
+```bash
+npm run test:watch
+```
