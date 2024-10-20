@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('Clonar Git') {
       steps {
-        git branch 'main', url: 'https://github.com/JoseSamuelAldanaPerez/api-extraescolares'
+        git url: 'https://github.com/JoseSamuelAldanaPerez/api-extraescolares', branch: 'main'
       }
     }
 
