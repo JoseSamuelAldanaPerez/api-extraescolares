@@ -5,7 +5,7 @@ pipeline {
 
   stages {
     stage('Clonar Git') {
-      setps {
+      steps {
         git 'https://github.com/JoseSamuelAldanaPerez/api-extraescolares'
       }
     }
