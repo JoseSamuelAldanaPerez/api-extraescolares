@@ -72,3 +72,11 @@ Si se está desarrollando, `:watch` ayuda a ejecutar todos los tests cada vez qu
 ```bash
 npm run test:watch
 ```
+
+## Jenkins
+
+Para instalar Jenkins con Docker, se siguió la [documentación oficial](https://www.jenkins.io/doc/book/installing/docker/).
+
+Articulo que se siguió para la configuración del pipeline: [Jenkins Starting with Pipeline doing a Node.js test](https://medium.com/@gustavo.guss/jenkins-starting-with-pipeline-doing-a-node-js-test-72c6057b67d4)
+
+### Capturas de pantalla
