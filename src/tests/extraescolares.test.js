@@ -32,10 +32,35 @@ describe('Test endpoint POST', () => {
 // Omar
 describe('Test endpoint PUT', () => {
   // 1. actualizar el elemento con id 1 y devuelva 200
-  test('Actualizar una actividad existente correctamente', async () => {});
+  test('Actualizar una actividad existente correctamente', async () => {
+    const updateActivity = [
+      {
+        id: 1,
+        nombre: 'Teatro',
+        descripcion:
+          'Interpreta, Actúa, Libera, Finge ser alguien más en esta vida.',
+        categoria: 'Arte',
+        horas: 2,
+        correo: 'Teatro@leon.tecnm.mx',
+      },
+    ]
+    await api.put(API_URL + '/1').send(updateActivity).expect(200);
+  });
 
   // 2. actualizar el elemento con id 2 y devuelva error 404, pues no existe esa actividad
-  test('Actualizar una actividad inexistente debería fallar', async () => {});
+  test('Actualizar una actividad inexistente debería fallar', async () => {
+    const updateActivity = [
+      {
+        id: 2,
+        nombre: 'Teatro',
+        descripcion: 'Interpreta, Actúa, Libera, Finge ser alguien más en esta vida.',
+        categoria: 'Arte',
+        horas: 2,
+        correo: 'Teatro@leon.tecnm.mx',
+      },
+    ]
+    await api.put(API_URL + '/2').send(updateActivity).expect(404);
+  });
 
   // Nota: usar .send() antes de .expect()
   // dentro de .send() va el objeto con los nuevos datos de la actividad
