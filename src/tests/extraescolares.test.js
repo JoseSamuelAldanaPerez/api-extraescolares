@@ -8,13 +8,24 @@ const API_URL = '/api/extraescolares';
 // Diego
 describe('Test endpoint GET', () => {
   // 1. probar que GET devuelva un 200 OK
-  test('Obtener todas las actividades correctamente', async () => {});
+  test('Obtener todas las actividades correctamente', async () => {
+    await api.get(API_URL)
+      .expect(200)
+      .expect('Content-Type', /json/);
+  });
 
   // 2. probar que GET /1 devuelva un 200 OK, pues la BD de pruebas solo tiene esa actividad
-  test('Obtener una actividad existent correctamente', async () => {});
+  test('Obtener una actividad existent correctamente', async () => {
+    await api.get(`${API_URL}/1`)
+      .expect(200)
+      .expect('Content-Type', /json/);
+  });
 
   // 3. probar que GET /2 devuelva un error 404, pues no existe esa actividad
-  test('Obtener una actividad inexistente debería fallar', async () => {});
+  test('Obtener una actividad inexistente debería fallar', async () => {
+    await api.get(`${API_URL}/2`)
+      .expect(404);
+  });
 });
 
 // Brian
