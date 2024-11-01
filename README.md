@@ -80,3 +80,9 @@ Para instalar Jenkins con Docker, se siguió la [documentación oficial](https:/
 Articulo que se siguió para la configuración del pipeline: [Jenkins Starting with Pipeline doing a Node.js test](https://medium.com/@gustavo.guss/jenkins-starting-with-pipeline-doing-a-node-js-test-72c6057b67d4)
 
 ### Capturas de pantalla
+
+![image](https://github.com/user-attachments/assets/3c0ab081-5b4e-4557-b826-b58e61e6541d)
+
+![image](https://github.com/user-attachments/assets/5f102c8e-e14f-4406-9a52-dfa79c482876)
+
+
