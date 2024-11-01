@@ -31,10 +31,36 @@ describe('Test endpoint GET', () => {
 // Brian
 describe('Test endpoint POST', () => {
   // 1. insertar un nuevo elemento y que devuelva 201
-  test('Insertar una nueva actividad correctamente', async () => {});
+  test('Insertar una nueva actividad correctamente', async () => {
+    const postActivity = [
+      {
+        id: 3,
+        nombre: 'Futbol',
+        descripcion:
+          'Inscribete al deporte más popular de todo México.',
+        categoria: 'Deporte',
+        horas: 2,
+        correo: 'FubtolTecnm@leon.tecnm.mx',
+      },
+    ]
+    await api.post(API_URL).send(postActivity).expect(201);
+    }); 
 
   // 2. insertar un nuevo elemento con ID 1 y devuelva error 400, pues ese ID ya existe
-  test('Insertar una actividad con ID repetido debería fallar', async () => {});
+  test('Insertar una actividad con ID repetido debería fallar', async () => {
+    const postActivity = [
+      {
+        id: 3,
+        nombre: 'Futbol',
+        descripcion:
+          'Inscribete al deporte más popular de todo México.',
+        categoria: 'Deporte',
+        horas: 2,
+        correo: 'FubtolTecnm@leon.tecnm.mx',
+      },
+    ]
+    await api.post(API_URL).send(postActivity).expect(400);
+  });
 
   // Nota: usar .send() antes de .expect()
   // dentro de .send() va el objeto de la nueva actividad a insertar
