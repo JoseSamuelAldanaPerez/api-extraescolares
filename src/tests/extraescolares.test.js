@@ -3,7 +3,7 @@ const { app, server } = require('../index');
 const databaseUtils = require('../database/utils');
 
 const api = supertest(app);
-const API_URL = '/api/extraescolares';
+const API_URL = '/api/v1/extraescolares';
 
 describe('Test endpoint GET', () => {
   test('Obtener todas las actividades correctamente', async () => {

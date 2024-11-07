@@ -1,44 +1,180 @@
 {
   "actividades": [
     {
-      "id": 1,
       "nombre": "Ajedrez",
       "descripcion": "Cuando juegas al ajedrez, tu cerebro tiene el reto de ejercer la lógica, desarrollar el reconocimiento de patrones, tomar decisiones tanto visual como analíticamente y poner a prueba tu memoria. ... El ajedrez puede mantener activo tu cerebro toda tu vida.",
       "categoria": "deportiva",
       "horas": 2,
-      "correo": "ajedrez@leon.tecnm.mx"
+      "correo": "ajedrez@leon.tecnm.mx",
+      "id": 1
     },
     {
-      "id": 2,
       "nombre": "Análisis Cinematográfico",
       "descripcion": "Acercar los elementos estéticos a los cursantes para que se les facilite la apreciación, el análisis y el disfrute de una obra fílmica.",
       "categoria": "cultural",
       "horas": 4,
-      "correo": "cinematografico@leon.tecnm.mx"
+      "correo": "cinematografico@leon.tecnm.mx",
+      "id": 2
     },
     {
-      "id": 3,
+      "nombre": "Atletismo",
+      "categoria": "deportiva",
+      "horas": 2,
+      "correo": "atletismo@leon.tecnm.mx",
+      "descripcion": "La práctica frecuente del atletismo permite desarrollar velocidad, resistencia y potencia.",
+      "id": 3
+    },
+    {
       "nombre": "Banda de Guerra",
-      "descripcion": "Representar el respeto cívico y ético de la comunidad tecnológica, engalanar los actos cívicos, fomentando una cultura cívica a los símbolos patrios, sorprender con sus exhibiciones, participar en eventos locales, prenacionales y nacionales de esta índole mostrando habilidades de coordinación, disciplina, marcialidad, te hacen pertenecer al Grupo de Banda de Guerra.",
+      "descripcion": "Representar el respeto cívico y ético de la comunidad tecnológica, engalanar los actos cívicos, fomentando una cultura cívica a los símbolos patrios.",
       "categoria": "civica",
       "horas": 1.5,
-      "correo": "escolta@leon.tecnm.mx"
+      "correo": "escolta@leon.tecnm.mx",
+      "id": 4
     },
     {
-      "id": 4,
       "nombre": "Artes Visuales",
       "descripcion": "Las artes visuales son una forma de expresión artística que utiliza elementos visuales para comunicar ideas, emociones y conceptos.",
       "categoria": "cultural",
       "horas": 2,
-      "correo": "artesvisuales@leon.tecnm.mx"
+      "correo": "artesvisuales@leon.tecnm.mx",
+      "id": 5
     },
     {
-      "id": 5,
-      "nombre": "Atletismo",
-      "descripcion": "La práctica frecuente del atletismo permite desarrollar velocidad, resistencia y potencia.",
+      "nombre": "Escolta",
+      "descripcion": "Representar el respeto cívico y ético de la comunidad tecnológica, engalanar los actos cívicos, fomentando una cultura cívica a los símbolos patrios, sorprender con sus exhibiciones, participar en eventos locales, prenacionales y nacionales de esta índole mostrando habilidades de coordinación, disciplina, marcialidad, te hacen pertenecer al Grupo de Escolta.",
+      "categoria": "civica",
+      "horas": 2,
+      "correo": "escolta@leon.tecnm.mx",
+      "id": 6
+    },
+    {
+      "nombre": "Basquetbol",
+      "descripcion": "Al baloncesto se le denomina como el deporte ráfaga. El motivo es que se requiere una gran velocidad, agilidad y coordinación para su práctica. Gracias a este ritmo de ejecución, nos permite mejorar todas aquellas habilidades motoras de nuestro organismo, especialmente las que tienen que ver con la coordinación y el equilibrio.",
       "categoria": "deportiva",
       "horas": 2,
-      "correo": "atletismo@leon.tecnm.mx"
+      "correo": "basquetbol@leon.tecnm.mx",
+      "id": 7
+    },
+    {
+      "nombre": "Beisbol",
+      "descripcion": "Ayuda a llevar un estilo de vida saludable, mejora la coordinación y la flexibilidad, combate el estrés, ayuda a mejorar la concentración y el sistema cardiovascular, quema calorías y grasas, tonifica el cuerpo, aumenta la resistencia física, genera bienestar y es muy divertido.",
+      "categoria": "deportiva",
+      "horas": 1,
+      "correo": "beisbol@leon.tecnm.mx",
+      "id": 8
+    },
+    {
+      "nombre": "Football Americano",
+      "descripcion": "Desarrolla fuerza, trabaja y fortalece los músculos en cada entrenamiento y, por consiguiente. en todos los partidos. Fortalece la velocidad, una característica muy importante en todos los deportes, pero que en este puede determinar la victoria o la derrota de un equipo",
+      "categoria": "deportiva",
+      "horas": 3,
+      "correo": "americano@leon.tecnm.mx",
+      "id": 9
+    },
+    {
+      "nombre": "Futbol Soccer",
+      "descripcion": "Si nunca has jugado un partido de fútbol antes, deberías intentarlo. Es un deporte muy divertido que todo el mundo puede jugar, y puede ser jugado prácticamente en cualquier lugar. Y tampoco cuesta mucho jugarlo. Esta facilidad de acceso es lo que lo convierte en el deporte más popular del mundo. Hay múltiples y diferentes beneficios de jugar al fútbol que harán que quieras jugarlo todo el día. No sólo es un deporte divertido que te permite socializarte con los demás, sino que también es fantástico para tu salud muscular, tu salud cardíaca, tu fortaleza ósea, tu estado mental y mucho más.",
+      "categoria": "deportiva",
+      "horas": 1.5,
+      "correo": "futbol@leon.tecnm.mx",
+      "id": 10
+    },
+    {
+      "nombre": "Taekwondo",
+      "descripcion": "La actividad de taekwondo te brinda la oportunidad de realizar una actividad física, que además, al ser un arte marcial te sirve como defensa personal. Nuestro equipo representativo es el Campeón Estatal de la Liga Universitaria.",
+      "categoria": "deportiva",
+      "horas": 1,
+      "correo": "taekwondo@leon.tecnm.mx",
+      "id": 11
+    },
+    {
+      "nombre": "Voleibol",
+      "descripcion": "Las actividades físicas que intervienen en la práctica del voleibol fortalecerán el cuerpo superior, los brazos y los hombros, así como los músculos de la parte inferior del cuerpo. Jugar voleibol también mejora los sistemas cardiovascular y respiratorio.",
+      "categoria": "deportiva",
+      "horas": 1,
+      "correo": "voleibol@leon.tecnm.mx",
+      "id": 12
+    },
+    {
+      "nombre": "Poesía",
+      "descripcion": "Diviértete y aprende la métrica, entonación y formas de hablar para públicos diversos. Amplía tu vocabulario para utilizarlo en todos los campos en donde te relaciones. Pon a prueba tu creatividad, escribiendo tus propios poemas, domina un escenario y encanta al público que te escuche.",
+      "categoria": "cultural",
+      "horas": 1,
+      "correo": "poesia@leon.tecnm.mx",
+      "id": 13
+    },
+    {
+      "nombre": "Dibujo Artístico",
+      "descripcion": "Realizar a partir de diferentes técnicas gráficas el trazado y delineado de cualquier figura abstracta,o que represente un objeto real como forma de expresión de los conceptos tanto de manera objetiva como subjetiva.",
+      "categoria": "cultural",
+      "horas": 1,
+      "correo": "dibujo@leon.tecnm.mx",
+      "id": 14
+    },
+    {
+      "nombre": "Taller de Guitarra",
+      "descripcion": "El taller de guitarra del Tecnológico Nacional de México campus León, tiene como finalidad aportar al estudiante los conocimientos para que desarrolle su capacidad creativa a través del aprendizaje de la técnica guitarrística y de esta manera domine el lenguaje musical para nutrir y fortalecer su formación como futuro profesionista.",
+      "categoria": "cultural",
+      "horas": 1,
+      "correo": "julioalfredo.velasquez@leon.tecnm.mx",
+      "id": 15
+    },
+    {
+      "nombre": "Vocalización y Canto",
+      "descripcion": "Formar un puente entre hablar y cantar, de forma que la iniciación al canto, se de espontáneamente, con naturalidad. Desarrollar el control de la respiración: Con sonido y sin el. Vocalizar emitiendo una voz resonante y clara.",
+      "categoria": "cultural",
+      "horas": 1,
+      "correo": "canto@leon.tecnm.mx",
+      "id": 16
+    },
+    {
+      "nombre": "Puntadas",
+      "descripcion": "Únete a esta actividad en la que aprenderás una variedad infinita de posibilidades para crear todo lo que puedas imaginar simplemente con un ovillo y una aguja de crochet.",
+      "categoria": "cultural",
+      "horas": 1,
+      "correo": "puntadas@leon.tecnm.mx",
+      "id": 17
+    },
+    {
+      "nombre": "Danza Folklórica",
+      "descripcion": "El taller de Danza Folklórica te permite compartir experiencias en un ambiente artístico, explorando las posibilidades motrices de tu cuerpo; expresando emociones por medio del lenguaje dancístico, no como un arte innovador sino orientado a la conservación de nuestras tradiciones por medio de los bailes típicos y tradicionales de nuestra cultura.",
+      "categoria": "cultural",
+      "horas": 1.5,
+      "correo": "roxana.moreno@leon.tecnm.mx",
+      "id": 18
+    },
+    {
+      "nombre": "Danzas Polinesias",
+      "descripcion": "Aventúrate enriqueciendo tu mente y tu cuerpo bailando. Descubre tu potencial en esta interesante y atractiva disciplina que es la Danza Polinesia (Hawaiano y Tahitiano).Todo en un ambiente de respeto; promoviendo la cultura.",
+      "categoria": "cultural",
+      "horas": 1.5,
+      "correo": "roxana.moreno@leon.tecnm.mx",
+      "id": 19
+    },
+    {
+      "nombre": "Club de Lectura",
+      "descripcion": "Club de Lectura LEONES LECTORES",
+      "categoria": "cultural",
+      "horas": 1,
+      "correo": "lectura@leon.tecnm.mx",
+      "id": 20
+    },
+    {
+      "nombre": "Club Conversacional Multicultural",
+      "descripcion": "Practica tu inglés de forma fácil y divertida con un grupo de jóvenes que te ayudarán a perfeccionarlo a través del análisis de películas, situaciones de la vida diaria y juegos.",
+      "categoria": "cultural",
+      "horas": 1,
+      "correo": "lenguasextranjeras@leon.tecnm.mx",
+      "id": 21
+    },
+    {
+      "nombre": "Artes Visuales Plásticas",
+      "descripcion": "El taller de Artes Visuales Plásticas te brinda la oportunidad de aprender y desarrollar tu talento en: Dibujo, Pintura, Estampado, Grabado y Escultura, Además tendrás la oportunidad de participar en varias exposiciones de arte.",
+      "categoria": "cultural",
+      "horas": 2,
+      "correo": "artesvisuales@leon.tecnm.mx",
+      "id": 22
     }
   ]
 }
