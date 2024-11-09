@@ -41,10 +41,16 @@ Construir la imagen:
 docker build -t extraescolares .
 ```
 
-Ejecutar la imágen:
+Ejecutar la imágen (son necesarias las variables de entorno):
 
 ```bash
-docker run -p 3000:3000 extraescolares
+docker run --env-file .env -p 3000:3000 extraescolares
+```
+
+O en cambio, específicar las variables en el comando:
+
+```bash
+docker run -e MONGODB_URI="mongodb+srv://..." -p 3000:3000 extraescolares
 ```
 
 ## Documentación
